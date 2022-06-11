@@ -17,11 +17,11 @@ for (i = 1; i <= num; i++) {
     if(operator === '+') {
         result += operand; 
     } else if(operator === '-') {
-        result ? result -= operand : result = operand;
+        i === 1 ? result = operand : result -= operand;
     } else if(operator === '*') {
-        result ? result *= operand : result = operand;
+        i === 1 ? result = operand : result *= operand;
     } else if(operator === '/') {
-        result ? result /= operand : result = operand;
+        i === 1 ? result = operand : result /= operand;
     }
 }
 console.log(`Результат: ${result}`);
